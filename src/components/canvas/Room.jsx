@@ -3,8 +3,8 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader'
-const Room = () => {
-  const room = useGLTF('./')
+const room = () => {
+  const room = useGLTF('./desktop_pc/textures/scene.gltf')
   return (
     <mesh>
         <hemisphereLight intensity={0.15}
@@ -44,4 +44,4 @@ const RoomCanvas = () => {
 
   )
 }
-export default Room
+export default room

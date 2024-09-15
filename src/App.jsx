@@ -8,7 +8,7 @@ import './App.css'
 const App = () => {
   return (
       <BrowserRouter>
-        <div className="relative z-0 bg-primary">
+        <div className="relative z-0 bg-primary pt-[100px]">
 
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar/>
