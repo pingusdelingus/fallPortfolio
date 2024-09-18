@@ -12,6 +12,7 @@ const App = () => {
 
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar/>
+            {/* <div id='particles-js'></div> */}
             <Hero />
             <div className='flex flex-col items-center justify-center'>
               <About/>
