@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { styles } from '../styles';
 import { staggerContainer } from '../utils/motion';
-// WORKING 
+
 const SectionWrapper = (Component, idName) => 
   function HOC() {
     const controls = useAnimation();
     const [ref, inView] = useInView({
       threshold: 0.5,
-      triggerOnce: false
+      triggerOnce: false  // Keeps animating each time it enters view
     });
 
     useEffect(() => {
@@ -23,7 +23,7 @@ const SectionWrapper = (Component, idName) =>
     return (
       <motion.section
         ref={ref}
-        variants={staggerContainer()}
+        variants={staggerContainer(0.2, 0)}  // Use the staggerContainer with specified values
         initial="hidden"
         animate={controls}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
@@ -31,9 +31,9 @@ const SectionWrapper = (Component, idName) =>
         <span className="hash-span" id={idName}>
           &nbsp;
         </span>
-        <Component />
+        <Component />  {/* Ensure this component is rendering something */}
       </motion.section>
-    )
-  }
+    );
+  };
 
-export default SectionWrapper
+export default SectionWrapper;

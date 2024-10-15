@@ -18,7 +18,12 @@ const App = () => {
           <Navbar/>
             {/* <div id='particles-js'></div> */}
             <Hero />
-            <div data-scroll data-scroll-speed="0.3" className='flex flex-col items-center justify-center'>
+            <div>
+             {/* <script  src="../particles.js"></script> 
+              <script defer src="../tmp.js"></script>  */}
+
+            </div>
+            <div className='flex flex-col items-center justify-center'>
               <About/>
               <Experience/>
               <Tech />

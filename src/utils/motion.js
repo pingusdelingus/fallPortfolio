@@ -77,12 +77,24 @@ export const textVariant = (delay) => {
   
   export const staggerContainer = (staggerChildren, delayChildren) => {
     return {
-      hidden: {},
-      show: {
+      hidden: {
+        opacity: 0,           // This will still hide the element
+        filter: 'blur(10px)',  // Keep the blur effect
+        x: '-30%',            // Adjust translateX to not move out of view completely
         transition: {
-          staggerChildren: staggerChildren,
-          delayChildren: delayChildren || 0,
-        },
+          duration: 0.75,      // Duration for the hidden state
+        }
+      },
+      show: {
+        opacity: 1,           // Fully visible
+        filter: 'blur(0)',    // No blur
+        x: '0%',              // Reset the translate
+        transition: {
+          duration: 0.75,      // Duration for the show state
+          staggerChildren: staggerChildren, // Staggering children animations
+          delayChildren: delayChildren || 0, // Delay for children animations
+        }
       },
     };
   };
+  

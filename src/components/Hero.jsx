@@ -1,6 +1,8 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import { styles  } from '../styles'
+import { SectionWrapper } from '../hoc';
+
 //import { Room } from './canvas/room.jsx'
 const Hero = () => {
   return (
@@ -35,4 +37,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default SectionWrapper(Hero, "hero")
