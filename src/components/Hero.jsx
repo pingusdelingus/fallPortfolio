@@ -16,11 +16,11 @@ const Hero = () => {
       <div className='w-1 sm:h-65 h-25 violet-gradient'/>
 
       <div>
-        <h1 className={`${styles.heroHeadText}text-[#8aadf4]`}>
+        <h1 data-scroll data-scroll-speed="0.5"className={`${styles.heroHeadText}text-[#8aadf4]`}>
 
           hi, i'm <span className='text-text-[#915eff]'> esteban</span>
         </h1>
-        <p className={`${styles.heroSubText} m5-2 text-[#7dc4e4]`}>
+        <p data-scroll data-scroll-speed="0.7" className={`${styles.heroSubText} m5-2 text-[#7dc4e4]`}>
           an aspiring mathematician and computer scientist <br/>
           i enjoy studying set theory and building automation apps in my free time
         </p>

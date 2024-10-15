@@ -4,17 +4,21 @@ import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsC
 // import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import gsap from 'gsap';
+import { ScrollTrigger} from 'gsap/ScrollTrigger';
 
 const App = () => {
+
+
   return (
       <BrowserRouter>
-        <div className="relative z-0 bg-primary pt-[100px]">
-
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-            <Navbar/>
+        <div className="relative z-0 bg-primary ">
+        
+          <div className= "bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar/>
             {/* <div id='particles-js'></div> */}
             <Hero />
-            <div className='flex flex-col items-center justify-center'>
+            <div data-scroll data-scroll-speed="0.3" className='flex flex-col items-center justify-center'>
               <About/>
               <Experience/>
               <Tech />

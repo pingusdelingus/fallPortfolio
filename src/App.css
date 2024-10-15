@@ -1,3 +1,5 @@
+
+
 #root {
   /* ORIGINAL STUFF */
   /* max-width: 1280px; */
@@ -41,4 +43,9 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.coolNavbar {
+  background-image: linear-gradient(to bottom, rgba(83, 19, 102, 0.541), transparent)
 }

@@ -5,13 +5,15 @@ import {styles} from '../styles';
 import {navLinks} from '../constants'
 import {logo ,menu,close} from '../assets';
 import { link } from 'framer-motion/client';
+import '../App.css'
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className={`${styles.padding} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`
-    }>
+    <nav className={`${styles.padding}  w-full flex items-center py-5 fixed top-0 z-20 `}
+    style={{ backgroundColor : 'transparent' }}
+    >
     
     {/* <div className="w-full flex justify-between items-center max-w-5xl mx-auto"> ORIGINAL LINE */}
     <div className="w-full flex justify-between items-center">

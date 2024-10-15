@@ -1,15 +1,15 @@
 
-setTimeout(() => {
-    console.log('particles-js div created');
 
-    particle_div = document.createElement('div')
-    particle_div.id = 'particles-js'
+setTimeout(() => {
+    
+    particle_div = document.querySelector("#particles-js")    
     
     div = document.querySelector("#root > div > div")
-    background = document.querySelector("#root > div > div > section")
+    nav = document.querySelector("nav")
     
-    div.insertBefore(particle_div, background)
-
+    div.insertBefore(particle_div, nav)
+    
+    console.log('particles-js moved');
     
 
-}, 100)    
+}, 1)
