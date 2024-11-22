@@ -43,9 +43,18 @@ const Navbar = () => {
             : "text-secondary"
           
           } hover:text-blue-400 text-[18px] font-medium cursor-pointer`}
-           onClick={() => setActive(link.title)}
+           onClick={() => {
+            if(link.id == 'github'){
+              window.open('https://github.com/pingusdelingus')
+            }
+            setActive(link.title);
+                  const element = document.getElementById(link.id);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+          }}
           >
-            <a href={`# {link.id }`}>{link.title}</a>
+            <a href={`#${link.id}`}>{link.title}</a>
           </li>
         ))}
       </ul>

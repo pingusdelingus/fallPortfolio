@@ -27,7 +27,14 @@ const Hero = () => {
           i enjoy studying set theory and building automation apps in my free time
         </p>
       </div>
+      <div>
 
+      
+      <h3 className='py-20 text-pretty m5-2 text-blue-500'>
+      
+        click "About" or scroll down to learn more!
+      </h3>
+      </div>
     </div>
     
 

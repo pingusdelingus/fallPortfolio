@@ -19,7 +19,7 @@ setTimeout(() => {
         size: {
           value: 3,
           random: true,
-          anim: { enable: true, speed: 40, size_min: 0.1, sync: false },
+          anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
         },
         line_linked: {
           enable: true,
@@ -57,13 +57,13 @@ setTimeout(() => {
       retina_detect: true,
     });
     var count_particles, stats, update;
-    stats = new Stats();
-    stats.setMode(0);
-    stats.domElement.style.position = "absolute";
-    stats.domElement.style.left = "0px";
-    stats.domElement.style.top = "0px";
-    document.body.appendChild(stats.domElement);
-    count_particles = document.querySelector(".js-count-particles");
+    //stats = new Stats();
+    //stats.setMode(0);
+    //stats.domElement.style.position = "absolute";
+    //stats.domElement.style.left = "0px";
+    //stats.domElement.style.top = "0px";
+    //document.body.appendChild(stats.domElement);
+    //count_particles = document.querySelector(".js-count-particles");
     update = function () {
       stats.begin();
       stats.end();

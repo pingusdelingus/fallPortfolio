@@ -6,8 +6,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import gsap from 'gsap';
 import { ScrollTrigger} from 'gsap/ScrollTrigger';
+import audio1 from './assets/audio1.mp3'
+import sound2 from './assets/audio2.mp3'
+import sound3 from './assets/audio3.mp3'
+import sound4 from './assets/audio4.mp3'
+
 
 const App = () => {
+
+  function play(){
+    new Audio(sound1).play
+  }
 
 
   return (
@@ -16,7 +25,7 @@ const App = () => {
         
           <div className= "bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar/>
-            {/* <div id='particles-js'></div> */}
+             
             <Hero />
             <div>
              {/* <script  src="../particles.js"></script> 
@@ -26,12 +35,12 @@ const App = () => {
             <div className='flex flex-col items-center justify-center'>
               <About/>
               <Experience/>
-              <Tech />
+              {/* <Tech />
               <Works />
               <Feedbacks/>
               <div className="relative z-0">
               <Contact/>
-              <StarsCanvas/>
+              <StarsCanvas/> */}
 
 
 
@@ -47,7 +56,7 @@ const App = () => {
           </div>
 
 
-          </div>
+          
 
 
 

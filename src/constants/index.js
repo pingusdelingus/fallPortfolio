@@ -31,13 +31,18 @@ import {
       title: "About",
     },
     {
+      id: "particles",
+      title: "Particles",
+    },
+    {
       id: "work",
       title: "Work",
     },
     {
-      id: "contact",
-      title: "Contact",
+      id: "github",
+      title: "GitHub",
     },
+    
   ];
   
   const services = [
@@ -116,34 +121,33 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Software Engineering Intern",
+      company_name: "Optimal Tech",
       icon: starbucks,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developed a full-stack web application using React and Node.js resulting in a 9% reduction in page load times.",
+        "Collaborated with a team of 6 engineers to troubleshoot and resolve system errors, ensuring a smooth user experience.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Research Assistant",
+      company_name: "TPTP - tptp.org",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Feb 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed 19,600 problems for ATP systems while validating their satisfiable, countersatisfiable, contradictory axiom or theorem statuses.",
+        "Assisted Dr. Geoff Sutcliffe with research on extending Automated Theorem Proving (ATP) systems into non-classical typed modal logics.",
+        "Participating in code reviews and providing constructive feedback to other researchers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Lead Developer",
+      company_name: "Tuitionary",
       icon: shopify,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
@@ -154,19 +158,7 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
   ];
   
   const testimonials = [
