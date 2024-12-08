@@ -1,0 +1,11 @@
+{
+    "headers": {
+      "/src/*.js": {
+        "Content-Type": "application/javascript"
+      },
+      "/src/*.jsx": {
+        "Content-Type": "application/javascript"
+      }
+    }
+  }
+  
