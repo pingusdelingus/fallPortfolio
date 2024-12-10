@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')).render(
     <script>
    setTimeout(function() {
     
-   },2000 timeout);
+   },1000);
 
     </script>
     <App />
