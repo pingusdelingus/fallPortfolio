@@ -25,12 +25,10 @@ const App = () => {
         
           <div className= "bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar/>
-             
             <Hero />
             <div>
              {/* <script  src="../particles.js"></script> 
               <script defer src="../tmp.js"></script>  */}
-
             </div>
             <div className='flex flex-col items-center justify-center'>
               <About/>
@@ -41,30 +39,10 @@ const App = () => {
               <div className="relative z-0">
               <Contact/>
               <StarsCanvas/> */}
-
-
-
               </div>
-
-
-
-
             </div>
-
-
-
-          </div>
-
-
-          
-
-
-
+          </div> 
       </BrowserRouter>
-
-
-
-
   )
 }
 
