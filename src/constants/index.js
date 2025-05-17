@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    relm
   } from "../assets";
   
   export const navLinks = [
@@ -120,6 +121,19 @@ import {
   ];
   
   const experiences = [
+    {
+      title: "Data Science Intern",
+      company_name: "RELM Insurance",
+      icon: relm,
+      iconBg: "#383E56",
+      date: "December 2024 - Present",
+      points: [
+      "Rebuilt RELM-AI, an in-house LLM + RAG to expedite document retrieval and summaries for renewal policy underwriting.",
+"Created risk modeling simulations in order to evaluate the profitability and probability of breakeven with inwards/outwards re-insurance deals.",
+"Developed automation apps to optimize month-to-month business procedures, saving 65 hours of manual labor per month.",
+"Collaborated with a team of 9 data engineers in order to clean, prepare and migrate more than 7000 Salesforce objects into MS Fabric."
+      ],
+    },
     {
       title: "Software Engineering Intern",
       company_name: "Optimal Tech",
